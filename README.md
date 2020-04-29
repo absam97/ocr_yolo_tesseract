@@ -26,3 +26,6 @@ deskew --output output.png input.png
 
 after deskewing image would look like - 
 
+![](deskewed_200.jpg)
+
+3. Use below command to generate text as output from finale deskewed image - 
