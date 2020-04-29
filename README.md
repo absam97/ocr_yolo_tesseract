@@ -38,3 +38,7 @@ output would look like this -
 ![](output_text.JPG)
 
 You can convert this to text file as well using >'name.txt' in above python statement
+
+For more information check out google colab notebook - 
+
+https://colab.research.google.com/drive/1O43GwR5VFz7-TslFiCegL0ixn00zbAl4#scrollTo=ppTaAffN-lCW
