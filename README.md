@@ -3,6 +3,6 @@ OCR is a technology that recognizes text within a digital image. It is commonly 
 
 **I acquired the data for this task from here - https://dataturks.com/projects/devika.mishra/Indian_Number_plates -**
 
-**Image with bounding box looks like -** 
+**Images in this dataset looks like -** 
 
-![alt text](https://www.dropbox.com/s/blr5j9mt1loc2ql/Capture_Algo.PNG?dl=1)
+![](img_ex.jpg)
