@@ -6,3 +6,8 @@ OCR is a technology that recognizes text within a digital image. It is commonly 
 **Images in this dataset looks like -** 
 
 ![](img_ex.jpg)
+
+Steps - 
+
+1. Use Trained Model to generate text region with the help of the file generate_text_region.py
+Output would look like 
