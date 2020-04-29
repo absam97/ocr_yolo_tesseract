@@ -5,5 +5,4 @@ OCR is a technology that recognizes text within a digital image. It is commonly 
 
 **Image with bounding box looks like -** 
 
-
-![](https://www.dropbox.com/s/blr5j9mt1loc2ql/Capture_Algo.PNG?dl=1)
+![alt text](https://www.dropbox.com/s/blr5j9mt1loc2ql/Capture_Algo.PNG?dl=1)
