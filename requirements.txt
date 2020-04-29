@@ -1,0 +1,12 @@
+tensorflow
+numpy
+matplotlib
+seaborn
+opencv-python==4.2.0.34
+imageai==2.1.5
+Pillow
+pytesseract==0.3.4
+ipython==7.13.0
+scikit-learn
+deskew
+imutils
