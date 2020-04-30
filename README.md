@@ -3,7 +3,7 @@
 1. Install tesseract from here
 https://github.com/tesseract-ocr/tesseract/wiki
 
-2. chang pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract' in the code to tesseract installed location.
+2. chang pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract' in the app.py file to tesseract installed location.
 
 3. change your current directory to the repo using terminal, git bash or anaconda prompt
 
