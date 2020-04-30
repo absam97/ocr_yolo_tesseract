@@ -1,14 +1,19 @@
 **I made some changes to the repo - now you can just clone it and follow below steps to do ocr -**
 
-1. change your current directory to the repo using terminal, git bash or anaconda prompt
+1. Install tesseract from here
+https://github.com/tesseract-ocr/tesseract/wiki
 
-2. run pip install -r requirements.txt
+2. chang pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract' in the code to tesseract installed location.
 
-3. run python app.py
+3. change your current directory to the repo using terminal, git bash or anaconda prompt
 
-4. run localhost in your web browser
+4. run pip install -r requirements.txt
 
-5. drag and drop an image following the instructions and voila you'll get a text output
+5. run python app.py
+
+6. run localhost in your web browser
+
+7. drag and drop an image following the instructions and voila you'll get a text output
 
 # ocr_yolo_tesseract
 OCR is a technology that recognizes text within a digital image. It is commonly used to recognize text in scanned documents, but it serves many other purposes as well.  OCR software processes a digital image by locating and recognizing characters, such as letters, numbers, and symbols. 
