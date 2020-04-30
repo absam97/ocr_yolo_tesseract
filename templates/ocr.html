@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flask App</title>
+        {{ dropzone.load() }}
+        {{ dropzone.style('border: 2px dashed #0087F7; margin: 10%; min-height: 400px;') }}
+        <style type="text/css">
+        	* {
+        		box-sizing: border-box;
+        	}
+        </style>
+    </head>
+    <body style="font-family: 'Lucida Console', Monaco, monospace">
+        <h1 style="text-align: center; margin-bottom: 30px;">Upload your image to detect characters in it!</h1>
+        <section>
+        	<h2 style="text-align: center; margin-bottom: 30px;">Instructions - </h2>
+        	<p style="text-align: center;">
+        		<ol style="margin-left: 20px;">
+        			<li>For best results uplaod an image which contains lience plate in the middle and it is visible properly</li>
+        			<li>Don't upload large image, it will take a long time to detect characters on large image</li>
+        			<li>jpg format is preferred</li>
+        		</ol>
+        	</p>
+        </section>
+        {{ dropzone.create(action_view='index') }}
+    </body>
+</html>

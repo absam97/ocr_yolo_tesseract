@@ -1,9 +1,13 @@
 import tempfile
-
 import cv2
 import numpy as np
 from PIL import Image
 import pytesseract
+import numpy as np
+from skimage import io
+from skimage.transform import rotate
+from skimage.color import rgb2gray
+from deskew import determine_skew
 
 IMAGE_SIZE = 300
 BINARY_THREHOLD = 180
@@ -46,10 +50,15 @@ def remove_noise_and_smooth(file_name):
     or_image = cv2.bitwise_or(img, closing)
     return or_image
 
-
-img = process_image_for_ocr('deskewed_200.jpg')
-cv2.imwrite('processed_200.jpg', img)
-text = pytesseract.image_to_string(Image.open('processed_200.jpg'), config='-c tessedit_char_whitelist=.ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789')
-cv2.imshow('',cv2.imread('text_detected_200.jpg',0))
-cv2.waitKey(5000)
-print(text)
+def generated_text():
+    image = io.imread('text_detected-objects\\licence-00000.jpg')
+    grayscale = rgb2gray(image)
+    angle = determine_skew(grayscale)
+    rotated = rotate(image, angle, resize=True) * 255
+    io.imsave('deskewed_fin.jpg', rotated.astype(np.uint8))
+    img = process_image_for_ocr('deskewed_fin.jpg')
+    cv2.imwrite('processed_fin.jpg', img)
+    text = pytesseract.image_to_string(Image.open('processed_fin.jpg'), config='-c tessedit_char_whitelist=.ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789')
+    #cv2.imshow('',cv2.imread('text_detected.jpg',0))
+    #cv2.waitKey(5000)
+    return text
