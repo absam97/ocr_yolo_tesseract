@@ -1,3 +1,15 @@
+**I made some changes to the repo - now you can just clone it and follow below steps to do ocr -**
+
+1. change your current directory to the repo using terminal, git bash or anaconda prompt
+
+2. run pip install -r requirements.txt
+
+3. run python app.py
+
+4. run localhost in your web browser
+
+5. drag and drop an image following the instructions and voila you'll get a text output
+
 # ocr_yolo_tesseract
 OCR is a technology that recognizes text within a digital image. It is commonly used to recognize text in scanned documents, but it serves many other purposes as well.  OCR software processes a digital image by locating and recognizing characters, such as letters, numbers, and symbols. 
 
@@ -42,15 +54,3 @@ You can convert this to text file as well using >'name.txt' in above python stat
 For more information check out google colab notebook - 
 
 https://colab.research.google.com/drive/1O43GwR5VFz7-TslFiCegL0ixn00zbAl4#scrollTo=ppTaAffN-lCW
-
-**I made some changes to the repo - now you can just clone it and follow below steps to do ocr -**
-
-1. change your current directory to the repo using terminal, git bash or anaconda prompt
-
-2. run pip install -r requirements.txt
-
-3. run python app.py
-
-4. run localhost in your web browser
-
-5. drag and drop an image following the instructions and voila you'll get a text output
