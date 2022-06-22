@@ -1,6 +1,6 @@
 tensorflow==1.15.2
 keras==2.2.5
-numpy==1.16.5
+numpy==1.22.0
 scikit-image
 matplotlib==3.1.1
 seaborn==0.9.0
